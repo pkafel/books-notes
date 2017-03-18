@@ -7,4 +7,4 @@ This repository contains my notes taken while reading different books or doing o
 * [Developing Reactive Microservices (by Markus Eisele)](drm.md)
 * [Functional Programming in Scala (by Paul Chiusano and Rúnar Bjarnason)](fpis.md)
 * [SPA design and Architecture: Understanding single-page web application (by Emmit A. Scott Jr.)](spa.md)
-* [Shaping up with Angular.js (by Code School)](suwajs.dm)
+* [Shaping up with Angular.js (by Code School)](suwajs.md)
