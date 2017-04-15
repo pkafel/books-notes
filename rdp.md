@@ -97,3 +97,27 @@ Networked shared-data system can have at most two of three desirable properties:
 ### Managing complexity
 * Essential complexity is the kind that is inherent in the problem domain. 
 * Incidental complexity is the kind that is introduced solely by the solution.
+
+## Chapter 3
+
+### Existing support for Reactive Design
+
+* Green threads
+> Green threads are asynchronous and nonblocking, but they do not support message passing. They do not scale up to use multiple cores on a machine by themselves, although if the runtime supports it, it is possible to have more than one in a process, or multiple processes can be run. They do not scale outward across nodes in a net- work. They also do not provide any mechanisms for fault tolerance, so it is up to devel- opers who use them to write their own constructs to handle any failure that may occur.
+
+* Event loops
+> The suitability of an event loop for a Reactive application depends on the implemen- tation. As deployed via Node.js in JavaScript, event loops are similar to green threads in that they are asynchronous and nonblocking but do not support message passing. They do not scale up to use multiple cores on a machine by themselves, although if the runtime supports it, it is possible to have more than one in a process, or multiple processes can be run. They do not scale outward across nodes in a network. They also do not provide any mechanisms for fault tolerance, so it is up to developers to write their own constructs to handle any failure that may occur.
+
+* Communicating Sequential Processes (CSP)
+> CSP is asynchronous and nonblocking and supports message passing in rendezvous fashion. It scales up to use multiple cores on a machine, but none of the current implementations scale outward across nodes. CSP does not provide any mechanisms for fault tolerance, so it is up to developers to write their own constructs to handle any failure that may occur.
+
+* Futures and promises
+> Futures and Promises are asynchronous and nonblocking, but they do not support message passing. They do scale up to use multiple cores on one machine. Current implementations do not scale outward across nodes in a network. They do provide mechanisms for fault tolerance when a single Future fails, and some implementations aggregate failure across multiple Futures such that if one fails, all fail.
+
+* Reactive extension
+> Rx provides facilities to process streams of data in an asynchronous and nonblocking fashion. The current implementations scale up to use multiple cores on a machine but not outward across nodes in a network. Rx does not provide a mechanism for del- egating failure handling, but it does include provisions to reliably tear down a failed stream-processing pipeline via dedicated termination signals. RxJava in particular is a useful building block for implementing components of a Reactive system.
+
+* The actor model
+> Actors are asynchronous and nonblocking, and support message passing. They scale up to use multiple cores on one machine, and they scale outward across nodes in both the Erlang and Akka implementations. They provide supervision mechanisms, as well, in support of fault tolerance. They meet all the requirements for building Reactive applications. This does not mean Actors should be used for every purpose when build- ing an application, but they can easily be used as a backbone, providing architectural support to services that use other Reactive technologies.
+
+## Chapter 4
