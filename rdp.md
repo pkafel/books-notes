@@ -121,3 +121,24 @@ Networked shared-data system can have at most two of three desirable properties:
 > Actors are asynchronous and nonblocking, and support message passing. They scale up to use multiple cores on one machine, and they scale outward across nodes in both the Erlang and Akka implementations. They provide supervision mechanisms, as well, in support of fault tolerance. They meet all the requirements for building Reactive applications. This does not mean Actors should be used for every purpose when build- ing an application, but they can easily be used as a backbone, providing architectural support to services that use other Reactive technologies.
 
 ## Chapter 4
+
+### Flow control
+
+> Flow control is the process of adjusting the transmission rate of a stream of messages to ensure that the receiver is not overwhelmed. Whenever this process informs the sender that it must slow down, the sender is said to experience back pressure.
+
+Two basic flow control schemas:
+* NACK - consumer rejects new messages when is still busy
+* ACK - producer waits for consumer to let him know when to deliver more messages
+
+### Delivery guarantees
+* At-most-once
+* At-least-once
+* Exactly once
+
+Implementing a runtime environment with very strong delivery guarantees is expensive in that extra mechanisms need to be built in — for example, resending network messages until receipt is confirmed - and these mechanisms degrade performance and scalability even when no failures occur.
+
+### Message vs event
+
+In event based systems producers are addressable whereas in message based systems consumers are.
+
+## Chapter 5
