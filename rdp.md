@@ -142,3 +142,20 @@ Implementing a runtime environment with very strong delivery guarantees is expen
 In event based systems producers are addressable whereas in message based systems consumers are.
 
 ## Chapter 5
+
+### Location transparency
+
+> The property that source code for sending a message looks the same regardless of where the recipient will process it. (...) Location transparency does not aim to make remote interactions look like local ones. Its goal, rather, is to unify the expression of message passing under a common abstraction for both local and remote interaction.
+
+### Transparent remoting
+
+> Making remote invocations appear the same as local ones (for example CORBA).
+
+### Location transparency vs transparent remoting
+
+> With location transparency, message passing is always explicit. Every instance of message passing is potentially remote, yet the sender need not concern itself with whether the Actor is local or remote, nor with the mechanics of sending the message, nor with whether the message will be transmitted in nanoseconds or microseconds. (...) Contrast this with transparent remoting, where a local proxy object is created and the desired method is called directly on it, hiding the fact that message passing happens underneath.
+
+### Benefits of location transparency
+* Horizontal scalability
+* Testing
+* Better error handling
