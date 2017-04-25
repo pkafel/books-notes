@@ -159,3 +159,11 @@ In event based systems producers are addressable whereas in message based system
 * Horizontal scalability
 * Testing
 * Better error handling
+
+## Chapter 6
+
+When designing application it is important to identify key features and define hierarchy based on them. At the bottom of hierarchy is a place for implementation details. Going up each module will become more and more abstract.
+
+### Dependencies vs descendant modules
+* Dependency - functionality that lies outside bound is incorporated by reference.
+* Descendant module - bounded subset of the problem space owned by their parent and owning its smaller piece
