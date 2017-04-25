@@ -167,3 +167,25 @@ When designing application it is important to identify key features and define h
 ### Dependencies vs descendant modules
 * Dependency - functionality that lies outside bound is incorporated by reference.
 * Descendant module - bounded subset of the problem space owned by their parent and owning its smaller piece
+
+## Chapter 7
+
+> It is worth remembering that validation errors are part of the normal operation protocol between modules, but failures are those cases in which the normal protocol cannot be executed any longer and the supervision channel is needed. Validation goes to the user of a service, whereas failure is handled by the owner of the service.
+
+>If a certain piece of the problem is owned by a module, that means this module needs to solve that part and provide the corresponding functionality. No other module will do so in its stead. Dependent modules will rely on this fact and will not operate correctly or to their full feature set when the module that is supposed to offer these functions is not operational. In other words, ownership of a part of the problem implies a commitment to provide the solution, because the rest of the application will depend on this. 
+
+>Every function of an application is implemented by a module that owns it; and, according to the hierarchical decomposition performed in the previous chapter, this module has a chain of ancestors reaching all the way up to the top level. That one corresponds to the high-level overall mission statement for the full system design as well as its top-most implementation module, which is typically an application bundle or a deployment configuration manager for large distributed applications.
+
+>This ancestor chain is necessary because we know that failures will happen, and by failures we mean incidents where a module cannot perform its function any longer (for example, because the hardware it was running on stopped working). The supervisor is responsible for monitoring the health of its descendant modules and initiating the start of new ones in case of failure. Only when that does not work — for whatever reason — does it signal this problem to its own supervisor.
+
+### Lifecycle control
+* supervisor must literally own the lifecycle of its submodules (replacing a failed instance includes clearing out all associated state, such as removing it from routing tables and in general dropping all references to it so the runtime can then reclaim the memory and other resources that the failed module occupied)
+* the lifecycle of descendant modules is strictly bounded by its supervisor’s lifecycle: the supervisor creates it, and without a supervisor it cannot continue to exist
+
+This does not apply to dependencies, only descendant modules.
+
+> Ownership implies a lifecycle bound, whereas inclusion by reference allows independent lifecycles. The latter requires location transparency in order to enable references to dependencies to be acquired dynamically.
+
+### Resilience
+* every module should be a unit od resilience
+* it is important to isolate failure as early as possible - this allow to keep cost of recovery low
