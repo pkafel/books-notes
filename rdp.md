@@ -189,3 +189,20 @@ This does not apply to dependencies, only descendant modules.
 ### Resilience
 * every module should be a unit od resilience
 * it is important to isolate failure as early as possible - this allow to keep cost of recovery low
+
+## Chapter 8
+
+### Grouping data and behavior according to transaction boundaries
+In highy distributed systems strong consistancy is impossible to achive. Thats why we must build small building blocks(entities) that are internally consistend but interact in an eventually consistent fashion. This way behavior of a system is strongly consistent only for operations that do not span multiple entities.
+
+In case of operations that require specific slicing of data that cannot be achive (for example, because it would break strong consistancy of more important operations) system must fallback to eventual consistancy.
+
+> (...) the main concern of grouping data according to transactional boundaries is to ensure that everything that must be consistent is not distributed. A consistent unit must not fail partially; if one part of it fails, then the entire unit must fail.
+
+### Segregation of responsibilities
+* A module does one job and does it well.
+* The scope of a module is bounded by the responsibility of its parent.
+* Module boundaries define the possible granularity of horizontal scaling by replication.
+* Modules encapsulate failure, and their hierarchy defines supervision.
+* The lifecycle of a module is bounded by that of its parent.
+* Module boundaries coincide with transaction boundaries.
