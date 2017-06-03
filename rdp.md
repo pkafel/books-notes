@@ -206,3 +206,9 @@ In case of operations that require specific slicing of data that cannot be achiv
 * Modules encapsulate failure, and their hierarchy defines supervision.
 * The lifecycle of a module is bounded by that of its parent.
 * Module boundaries coincide with transaction boundaries.
+
+## Chapter 9
+
+>Designing the flow of messages through a Reactive application, it is important to keep the paths short and the messages flowing in one direction as much as possible, always toward the logical destination of the data.
+
+>Messages may be sent directly to an actor or to a supervisor acting as a router if the actor itself performs risky operations such as I/O. For this reason, you will see some message flows that are directed from a module to its descendant; but in most cases the supervisor is only involved as a proxy, and the real client is not part of the same supervision subtree. In general, most message flows are horizontal, and supervision is performed on the vertical axis.
