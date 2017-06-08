@@ -212,3 +212,21 @@ In case of operations that require specific slicing of data that cannot be achiv
 >Designing the flow of messages through a Reactive application, it is important to keep the paths short and the messages flowing in one direction as much as possible, always toward the logical destination of the data.
 
 >Messages may be sent directly to an actor or to a supervisor acting as a router if the actor itself performs risky operations such as I/O. For this reason, you will see some message flows that are directed from a module to its descendant; but in most cases the supervisor is only involved as a proxy, and the real client is not part of the same supervision subtree. In general, most message flows are horizontal, and supervision is performed on the vertical axis.
+
+## Chapter 12
+
+### Simple component pattern
+
+> A component shall do only one thing, but do it in full.
+
+Implementation of Single Responsibility principle on the system level. By recursive process one needs to identify responsibilities and separate them into dedicated components.
+
+### The Error Kernel pattern
+
+> In a supervision hierarchy, keep important application state or functionality near the root while delegating risky operations towards the leaves.
+
+Important state and functionality should be placed near the top of the hierarchy and the more risky opearation should be place closer to the leaves of the hierarchy. Pattern should be applied if the system has components with different reliability requirements and significantly different failure probability.
+
+### Let It Crash pattern
+
+> Prefer a full component restart to internal failure handling.
