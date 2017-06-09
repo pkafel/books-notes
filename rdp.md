@@ -230,3 +230,11 @@ Important state and functionality should be placed near the top of the hierarchy
 ### Let It Crash pattern
 
 > Prefer a full component restart to internal failure handling.
+
+Whenever a component encounter a failure no attempt to fix the damage is made. Instead release of all resources and full restart is prefered. That means that components must tolerate crashes and restarts at any point of time.
+
+### Circuit breaker
+
+> Protect services by breaking the connection to their users during prolonged failure conditions.
+
+The flow of messages between components can be broken up deliberately when recipient is overloaded or failing. This as a result gives recipient time to recover and sender can fail fast.
