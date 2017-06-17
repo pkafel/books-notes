@@ -239,6 +239,22 @@ Whenever a component encounter a failure no attempt to fix the damage is made. I
 
 The flow of messages between components can be broken up deliberately when recipient is overloaded or failing. This as a result gives recipient time to recover and sender can fail fast.
 
+## Chapter 14
+
+### The Resource Encapsulation pattern
+
+> A resource and its lifecycle are responsibilities that must be owned by one component.
+
+The pattern is used in two cases:
+* to represent an external resource
+* to manage a supervised resource—both in terms of its lifecycle and its function
+
+### The Resource Loan pattern
+
+> Give a client exclusive transient access to a scarce resource without transferring ownership.
+
+Component that is managing the expensive resources can make a loan of the resource and provide exclusive access to it for the component that it needs it (borrower).
+
 ## Chapter 15
 
 ### The Request–Response pattern
