@@ -238,3 +238,40 @@ Whenever a component encounter a failure no attempt to fix the damage is made. I
 > Protect services by breaking the connection to their users during prolonged failure conditions.
 
 The flow of messages between components can be broken up deliberately when recipient is overloaded or failing. This as a result gives recipient time to recover and sender can fail fast.
+
+## Chapter 15
+
+### The Request–Response pattern
+
+> Include a return address in the message to receive a response.
+
+Natural and commonly used pattern for communication between components. 
+* The requester sends the request to the responder using an already-known desti- nation address.
+*􏰀 The responder sends the response to the requester using the address informa- tion contained in the corresponding request. 
+
+### The Self-Contained Message pattern
+
+> Each message will contain all information needed to process a request as well as to understand its response.
+
+State of operation need to be managed somehow during request - response communication so when response will come requester knows what to do with it. There are three common ways to do this:
+* make the whole state travel in a message
+* keep all the state on requester side
+* mix of two above
+
+### The Ask pattern
+
+> Delegate the handling of a response to a dedicated ephemeral component.
+
+When performing a request–response cycle with another Actor, the current business process needs to continue with further steps. This can be done by creating new ephemeral component (Actor, Future) that will handle the response.
+
+### The Forward Flow pattern
+
+> Let the information and the messages flow directly toward their destination where possible.
+
+Communication whenever possible should be one direction and not have a bottleneck component in the middle that forwarding requests and responses.
+
+### The Aggregator pattern
+
+> Create an ephemeral component if multiple service responses are needed to compute a service call’s result.
+
+Multiple call to other components should be represented as a Future and zipped together by ephemeral component in order to introduse parallelism.
