@@ -262,8 +262,8 @@ Component that is managing the expensive resources can make a loan of the resour
 > Include a return address in the message to receive a response.
 
 Natural and commonly used pattern for communication between components. 
-* The requester sends the request to the responder using an already-known desti- nation address.
-*􏰀 The responder sends the response to the requester using the address informa- tion contained in the corresponding request. 
+* The requester sends the request to the responder using an already-known destination address.
+*􏰀 The responder sends the response to the requester using the address information contained in the corresponding request. 
 
 ### The Self-Contained Message pattern
 
