@@ -5,6 +5,7 @@ This repository contains my notes taken while reading different books or doing o
 ## Table of content
 * [Blasting off with Bootstrap (by Code School)](bowb.md)
 * [Developing Reactive Microservices (by Markus Eisele)](drm.md)
+* [Event Streams in Action (by Alexander Dean)](esia.md)
 * [Functional Programming in Scala (by Paul Chiusano and Rúnar Bjarnason)](fpis.md)
 * [Reactive Design Patterns (by Roland Kuhn, Brian Hanafee, Jamie Allen)](rdp.md)
 * [SPA design and Architecture: Understanding single-page web application (by Emmit A. Scott Jr.)](spa.md)
