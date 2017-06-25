@@ -291,3 +291,25 @@ Communication whenever possible should be one direction and not have a bottlenec
 > Create an ephemeral component if multiple service responses are needed to compute a service call’s result.
 
 Multiple call to other components should be represented as a Future and zipped together by ephemeral component in order to introduse parallelism.
+
+## Chapter 16
+
+### The Pull pattern
+
+> Have the consumer ask the producer for batches of data.
+
+Whenever you need to balance the relationship between producer and consumer it is much easier to change push model to dynamic push\pull.
+
+### The Managed Queue pattern
+
+> Manage an explicit input queue, and react to its fill level.
+
+Managed queues can be used to monitor and steer the performance of a messaing system. Buffering and managed queues are even more important at the boundaries of a system that uses back pressure: if requests are ingested from a source that cannot be slowed down, you need to mediate between the bounded internal capacity and the potentially unbounded influx.
+
+### The Drop pattern
+
+> Dropping requests is preferable to failing uncontrollably.
+
+### The Throttling pattern
+
+> Throttle your own output rate according to contracts with other services.
