@@ -255,6 +255,20 @@ The pattern is used in two cases:
 
 Component that is managing the expensive resources can make a loan of the resource and provide exclusive access to it for the component that it needs it (borrower).
 
+### The Complex Command pattern
+
+> Send compound instructions to the resource to avoid excessive network usage.
+
+Sends the behavior to the resource in order to save time and network bandwidth in case of loquacious interchanges between resource and users and when user of the resource is only interested in the comparatively small result.
+
+### The Resource Pool pattern
+
+> Hide an elastic pool of resources behind their owner.
+
+### Patterns for managed blocking
+
+> Blocking a resource requires consideration and ownership.
+
 ## Chapter 15
 
 ### The Request–Response pattern
