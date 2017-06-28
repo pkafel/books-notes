@@ -239,6 +239,29 @@ Whenever a component encounter a failure no attempt to fix the damage is made. I
 
 The flow of messages between components can be broken up deliberately when recipient is overloaded or failing. This as a result gives recipient time to recover and sender can fail fast.
 
+## Chapter 13
+
+### The Active–Passive Replication pattern
+
+> Keep multiple copies of the service running in different locations, but only accept modifications to the state in one location at any given time.
+
+Fast during normal operation, suffers downtime during failovers and offers good consistency due to having a single active replica
+
+### Multiple-Master Replication patterns
+
+> Keep multiple copies of a service running in different locations, accept modifications everywhere, and disseminate all modifications among them.
+
+Three classes of strategies:
+* Consensus-based replication - offers perfect consistency, it suffers from high coordination overhead and, consequently, low throughput.
+* Replication with conflict detection and resolution - stay avail- able during severe failure conditions, but this can lead to data losses or require manual conflict resolution.
+* Conflict-free replicated data types - can achieve perfect availability even during severe failures. The data types are restricted, requiring special adaptation of the program code as well as designing it for an eventual consistency model.
+
+### The Active–Active Replication pattern
+
+> Keep multiple copies of a service running in different locations, and perform all modifications at all of them.
+
+Addresses the concern of avoiding downtime during failures at costs of all requests must be sent through a single choke point in order to guarantee consistent behavior of all replicas.
+
 ## Chapter 14
 
 ### The Resource Encapsulation pattern
