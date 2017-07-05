@@ -350,3 +350,21 @@ Managed queues can be used to monitor and steer the performance of a messaing sy
 ### The Throttling pattern
 
 > Throttle your own output rate according to contracts with other services.
+
+## Chapter 17
+
+### The Domain Object pattern
+
+> Separate the business domain logic from communication and state management.
+
+### The Sharding pattern
+
+> Scale out the management of a large number of domain objects by grouping them into shards based on unique and stable object properties.
+
+### The Event-Sourcing pattern
+
+> Perform state changes only by applying events. Make them durable by storing the events in a log.
+
+### The Event Stream pattern
+
+> Publish the events emitted by a component so that the rest of the system can derive knowledge from them.
