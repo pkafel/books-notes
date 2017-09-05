@@ -4,6 +4,7 @@ This repository contains my notes taken while reading different books or doing o
  
 ## Table of content
 * [Blasting off with Bootstrap (by Code School)](bowb.md)
+* [The Daily Edge: Simple Strategies to Increase Efficiency (by David Horsager)](tde.md)
 * [Developing Reactive Microservices (by Markus Eisele)](drm.md)
 * [Event Streams in Action (by Alexander Dean)](esia.md)
 * [Functional Programming in Scala (by Paul Chiusano and Rúnar Bjarnason)](fpis.md)
