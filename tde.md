@@ -25,8 +25,37 @@ Make sure your DMA's are FUN:
 * U - Under the main vision and current major objective
 * N - Number attached (must be quantifiable)
 
+## Power Hour
+
+For 60 minutes each morning, we don’t do meetings, phone calls, or e-mails. To help it work:
+* go public
+* share the idea
+* be consistent
+
+## Focus
+
+Working sequentially is way more effective than working on many things in parallel. Things that will help:
+* stay focused on one thing at a time
+* eliminate distractions
+* keep sticky notes
+
+## Decide now
+
+Dont leave unimportant things for later. If at all possible do it, use it, throw it, or complete it now.
+
+## SEEDS First
+
+It is hard to accomplish a big goal if you are sick and tired:
+* S -  Sleep
+* E - Exercise
+* E - Eat Right
+* D - Drink Water
+* S - Source (like for example God)
+
 ## Interesting quotes from the book
 
 > However beautiful the strategy, you should accasionally look at the result. - Winstone Churchill
 
 > Simplicity boils down to two steps: Identify the essential. Eliminate the rest. - Leo Babauta
+
+> Indecision is the thief of opportunity. — Jim Rohn
