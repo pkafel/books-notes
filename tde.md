@@ -52,6 +52,25 @@ It is hard to accomplish a big goal if you are sick and tired:
 * D - Drink Water
 * S - Source (like for example God)
 
+## Manage Your Energy
+
+The key is completing the right tasks at the right time. During morning hours when we are full of energy we can focus on more creative task. In the evening when tired write emails etc.
+
+## Log It
+
+A lot of minor habits add up. To track them:
+* commit to it
+* write it down
+* see result
+
+## Excellence, Not Perfection
+
+Part of achieving excellence is doing great work. Another part is doing it on time.
+* Do it right the first time
+* Give yourself a time limit
+* Know when to stop
+* Get feedback
+
 ## Interesting quotes from the book
 
 > However beautiful the strategy, you should accasionally look at the result. - Winstone Churchill
@@ -59,3 +78,5 @@ It is hard to accomplish a big goal if you are sick and tired:
 > Simplicity boils down to two steps: Identify the essential. Eliminate the rest. - Leo Babauta
 
 > Indecision is the thief of opportunity. — Jim Rohn
+
+> You onlylive once, but if you work it right, once is enough. —Joe E. Lewis
