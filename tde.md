@@ -71,6 +71,29 @@ Part of achieving excellence is doing great work. Another part is doing it on ti
 * Know when to stop
 * Get feedback
 
+### Plan tomorrow Today
+ 
+ Always plan ahead.
+ * Prioritize your to-do list
+ * Order it by urgency
+ * Put it on the paper
+
+ ### Energize
+
+ Excited people move faster, and with more purpose.
+ * Think of the bigger picture
+ * Act it 
+ * Move on if what you are doing is not exciting
+ * Celebrate little things
+
+## Go Ready
+
+Be prepared for the job at hand.
+* Do SEEDS first
+* Be true
+* Be ready anywhere
+* Dont forget your notebook
+
 ## Interesting quotes from the book
 
 > However beautiful the strategy, you should accasionally look at the result. - Winstone Churchill
