@@ -99,10 +99,10 @@ Be prepared for the job at hand.
 Use email effectively:
 * Close your email
 * Get to ten or less emails in your inbox
-** Delete or archive it
-** Deal with it
-** File it
-** Flag it for follow up or attach it to your calendar
+  * Delete or archive it
+  * Deal with it
+  * File it
+  * Flag it for follow up or attach it to your calendar
 * Use only email for information sharing
 
 ## Phone habbits
