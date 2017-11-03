@@ -94,6 +94,35 @@ Be prepared for the job at hand.
 * Be ready anywhere
 * Dont forget your notebook
 
+## Efficient Email
+
+Use email effectively:
+* Close your email
+* Get to ten or less emails in your inbox
+** Delete or archive it
+** Deal with it
+** File it
+** Flag it for follow up or attach it to your calendar
+* Use only email for information sharing
+
+## Phone habbits
+
+Use phone effectively:
+* Make a plan
+* Get to the point
+* Screen
+* Make voice mails brief
+* Be present
+
+## Maximize meetings
+
+Make meetings shorter and more worthwhile:
+* Hold fewer meetings
+* Start them off on the right foot
+* Set shorter agendas
+* Schedule them back to back
+* Go public
+
 ## Interesting quotes from the book
 
 > However beautiful the strategy, you should accasionally look at the result. - Winstone Churchill
