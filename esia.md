@@ -15,4 +15,4 @@
 
 **Unified log** - append-only, ordered, distributed log.
 
-Good example of open source unified log is [Apache Kafka](https://kafka.apache.org/)
+Good example of open source unified log is [Apache Kafka](https://kafka.apache.org/). Example of how to use it with some command-line tools can be find [here](https://gist.github.com/pkafel/7cca260427532bf64c58407964c623d2).
