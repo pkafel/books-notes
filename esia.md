@@ -13,6 +13,12 @@
 
 ## Chapter 2
 
-**Unified log** - append-only, ordered, distributed log.
+**Unified log** - append-only, ordered, distributed log. Good example of open source unified log is [Apache Kafka](https://kafka.apache.org/). Example of how to use it with some command-line tools can be find [here](https://gist.github.com/pkafel/7cca260427532bf64c58407964c623d2).
 
-Good example of open source unified log is [Apache Kafka](https://kafka.apache.org/). Example of how to use it with some command-line tools can be find [here](https://gist.github.com/pkafel/7cca260427532bf64c58407964c623d2).
+## Chapter 3
+
+**Complex Event Processing (CEP)** - CEP emphasizes the derivation of “complex events” from simpler input events and pre-dates unified log technologies like Apache Kafka, and so CEP systems will tend to work on much smaller (and potentially unordered) event streams.
+
+### Two types of stream processing:
+* single event processing
+* multiple event processing
